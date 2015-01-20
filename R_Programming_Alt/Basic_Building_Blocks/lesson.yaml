@@ -23,14 +23,14 @@
   Hint: Geben Sie 5 + 7 ein und druecken Sie dann die Eingabetaste.
 
 - Class: text
-  Output: R simply prints the result of 12 by default. However, R is a programming
-    language and often the reason we use a programming language as opposed to a calculator
-    is to automate some process or avoid unnecessary repetition.
+  Output: R druckt einfach das Ergebnis 12 aus. R ist aber natuerlich eine Programmiersprache. 
+    Einer der Hauptgruende, warum wir eine Programmiersprache verwenden und ein Grund R einem 
+    Taschenrechner vorzuziehen, liegt darin zu automatisieren oder Wiederholung zu vermeiden.
 
 - Class: text
-  Output: In this case, we may want to use our result from above in a second calculation.
-    Instead of retyping 5 + 7 every time we need it, we can just create a new variable
-    that stores the result.
+  Output: Wir koennten zum Beispiel das Ergebnis der Berechnung wiederverwenden. Statt jedesmal 
+    wieder 5 + 7 einzutippen, wenn wir das Ergebnis brauchen, koennen wir einfach eine neue Variable
+    erstellen, die das Ergebnis speichert.
 
 - Class: text
   Output: 'The way you assign a value to a variable in R is by using the assignment
