@@ -7,7 +7,7 @@
   Version: 2.2.12
 
 - Class: text
-  Output: In this lesson, you'll learn how to manipulate data using dplyr. dplyr is a fast and powerful R package written by Hadley Wickham and Romain Francois that provides a consistent and concise grammer for manipulating tabular data.
+  Output: In this lesson, you'll learn how to manipulate data using dplyr. dplyr is a fast and powerful R package written by Hadley Wickham and Romain Francois that provides a consistent and concise grammar for manipulating tabular data.
 
 - Class: text
   Output: One unique aspect of dplyr is that the same set of tools allow you to work with tabular data from a variety of sources, including data frames, data tables, databases and multidimensional arrays. In this lesson, we'll focus on data frames, but everything you learn will apply equally to other formats.
@@ -40,13 +40,13 @@
   Hint: Use library(dplyr) to load the dplyr package.
 
 - Class: cmd_question
-  Output: It's important that you have dplyr version 0.3 or later. To confirm this, type packageVersion("dplyr").
+  Output: It's important that you have dplyr version 0.4.0 or later. To confirm this, type packageVersion("dplyr").
   CorrectAnswer: packageVersion("dplyr")
   AnswerTests: omnitest(correctExpr='packageVersion("dplyr")')
   Hint: Check what version of dplyr you have with packageVersion("dplyr").
 
 - Class: text
-  Output: If your dplyr version is not at least 0.3, then you should hit the Esc key now, reinstall dplyr, then resume this lesson where you left off.
+  Output: If your dplyr version is not at least 0.4.0, then you should hit the Esc key now, reinstall dplyr, then resume this lesson where you left off.
 
 - Class: cmd_question
   Output: "The first step of working with data in dplyr is to load the data into what the package authors call a 'data frame tbl' or 'tbl_df'. Use the following code to create a new tbl_df called cran: \n\ncran <- tbl_df(mydf)."
@@ -55,10 +55,10 @@
   Hint: Type cran <- tbl_df(mydf) to create a new tbl_df called cran.
 
 - Class: cmd_question
-  Output: To avoid confusion and keep things running smoothly, let's remove the original dataframe from your workspace with rm("mydf").
+  Output: To avoid confusion and keep things running smoothly, let's remove the original data frame from your workspace with rm("mydf").
   CorrectAnswer: rm("mydf")
   AnswerTests: omnitest(correctExpr='rm("mydf")')
-  Hint: Use rm("mydf") to remove the original dataframe from your workspace.
+  Hint: Use rm("mydf") to remove the original data frame from your workspace.
 
 - Class: cmd_question
   Output: From ?tbl_df, "The main advantage to using a tbl_df over a regular data frame is the printing." Let's see what is meant by this. Type cran to print our tbl_df to the console.
@@ -73,7 +73,7 @@
   Output: First, we are shown the class and dimensions of the dataset. Just below that, we get a preview of the data. Instead of attempting to print the entire dataset, dplyr just shows us the first 10 rows of data and only as many columns as fit neatly in our console. At the bottom, we see the names and classes for any variables that didn't fit on our screen.
 
 - Class: text
-  Output: 'According to the "Introduction to dplyr" vignette written by the package authors, "The dplyr philosophy is to have small functions that each do one thing well." Specifically, dplyr supplies five ''verbs'' that cover all fundamental data manipulation tasks: select(), filter(), arrange(), mutate(), and summarize().'
+  Output: 'According to the "Introduction to dplyr" vignette written by the package authors, "The dplyr philosophy is to have small functions that each do one thing well." Specifically, dplyr supplies five ''verbs'' that cover most fundamental data manipulation tasks: select(), filter(), arrange(), mutate(), and summarize().'
 
 - Class: cmd_question
   Output: Use ?select to pull up the documentation for the first these core functions.
