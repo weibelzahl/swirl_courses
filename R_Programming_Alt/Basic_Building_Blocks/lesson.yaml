@@ -7,20 +7,21 @@
   Version: 2.2.0
 
 - Class: text
-  Output: In dieser Ubung werden wir uns die Grundlagen der R-Programmierung genauer ansehen.
+  Output: In this lesson, we will explore some basic building blocks of the R programming
+    language.
 
 - Class: text
-  Output: Sollten Sie zu irgendeinem Zeitpunkt mehr Informationen zu einem bestimmten Thema 
-    rund um R wuenschen, geben Sie den Befehl help.start() ein. Es oeffnet sich dann eine Auswahl
-    von Hilfen (je nach Ihren Einstellungen entweder innerhalb von RStudio oder in Ihrem Web-Browser).
-    Mit einer einfachen Suche im Web werden Sie auch oft die Antwort auf Ihre Fragen finden.
+  Output: If at any point you'd like more information on a particular topic related
+    to R, you can type help.start() at the prompt, which will open a menu of resources
+    (either within RStudio or your default web browser, depending on your setup).
+    Alternatively, a simple web search often yields the answer you're looking for.
 
 - Class: cmd_question
-  Output: R kann als interaktiver Taschenrechner verwendet werden. Geben Sie 5 + 7 ein und druecken Sie die 
-    Eingabetaste.
+  Output: In its simplest form, R can be used as an interactive calculator. Type
+    5 + 7 and press Enter.
   CorrectAnswer: 5 + 7
   AnswerTests: omnitest(correctExpr='5 + 7')
-  Hint: Geben Sie 5 + 7 ein und druecken Sie dann die Eingabetaste.
+  Hint: Type 5 + 7 and press Enter.
 
 - Class: text
   Output: R druckt einfach das Ergebnis 12 aus. R ist aber natuerlich eine Programmiersprache. 
