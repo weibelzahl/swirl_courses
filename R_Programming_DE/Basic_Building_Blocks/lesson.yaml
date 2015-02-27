@@ -64,10 +64,10 @@
   Hint: Tippen Sie y und drücken Sie dann die Eingabetaste.
 
 - Class: text
-  Output: Als nächstes legen wir uns eine kleine Sammlung von Zahlen an. In R nennt man das einen Vektor (englisch: vector). Alle Objekte die Daten enthalten, nennen wir eine Datenstruktur (englisch: data structure). Die einfachste Datenstruktur in R sind numerische Vektoren. Genau genommen ist sogar eine einzelne Zahl bereits ein Vektor mit der Länge 1.
+  Output: 'Als nächstes legen wir uns eine kleine Sammlung von Zahlen an. In R nennt man das einen Vektor (englisch: vector). Alle Objekte die Daten enthalten, nennen wir eine Datenstruktur (englisch: data structure). Die einfachste Datenstruktur in R sind numerische Vektoren. Genau genommen ist sogar eine einzelne Zahl bereits ein Vektor mit der Länge 1'.
   
 - Class: cmd_question
-  Output: Einen Vektor kann man einfach mit der Funktion c() anlegen. Das c steht für das englische 'concatenate' oder 'combine'. Um nun einen Vektor mit den Zahlen 1.1, 9, and 3.14 anzulegen, tippen Sie c(1.1, 9, 3.14). Achtung: In R werden die Nachkommastellen wie im Englischen üblich mit einem Punkt getrennt und nicht wie im Deutschen mit einem Komma. Stattdessen werden die Argumente mit Kommas voneinander unterschieden. Versuchen Sie nun den Vektor zu erstellen und speichern Sie das Ergebnis in einer neuen Variable mit dem Namen z.
+  Output: 'Einen Vektor kann man einfach mit der Funktion c() anlegen. Das c steht für das englische ''concatenate'' oder ''combine''. Um nun einen Vektor mit den Zahlen 1.1, 9, and 3.14 anzulegen, tippen Sie c(1.1, 9, 3.14). Achtung: In R werden die Nachkommastellen wie im Englischen üblich mit einem Punkt getrennt und nicht wie im Deutschen mit einem Komma. Stattdessen werden die Argumente mit Kommas voneinander unterschieden. Versuchen Sie nun den Vektor zu erstellen und speichern Sie das Ergebnis in einer neuen Variable mit dem Namen z'.
   CorrectAnswer: z <- c(1.1, 9, 3.14)
   AnswerTests: omnitest(correctExpr='z <- c(1.1, 9, 3.14)')
   Hint: Mit z <- c(1.1, 9, 3.14) weisen Sie den Vektor (1.1, 9, 3.14) der Variable z zu. Die Leerzeichen nach den Kommas sind wiederum nicht unbedingt notwendig, erhöhen aber die Lesbarkeit.
@@ -103,8 +103,8 @@
   Output: Als erstes hat R jedes der drei Elemente in z mit 2 multipliziert. Dann wurde zu jedem Element noch 100 addiert. So ergeben sich die Zahlen in der Ausgabe.
 
 - Class: text
-  Output: Es gibt noch mehr arithmetische Operatoren: `+`, `-`, `/` und `^` (wobei x^2
-    für 'x zum Quadrat' steht). Die Quadtratwurzel wird mit der Funktion sqrt() (das ist die Abkürzung für square-root) berechnet. Der Betrag einer Zahl ergibt sich mit abs().
+  Output: 'Es gibt noch mehr arithmetische Operatoren: `+`, `-`, `/` und `^` (wobei x^2
+    für ''x zum Quadrat'' steht). Die Quadtratwurzel wird mit der Funktion sqrt() (das ist die Abkürzung für square-root) berechnet. Der Betrag einer Zahl ergibt sich mit abs()'.
 
 - Class: cmd_question
   Output: Berechnen Sie die Wurzel aus z - 1 und weisen Sie das Ergebnis einer neuen Variable mit dem Namen my_sqrt zu.
@@ -113,7 +113,7 @@
   Hint: Weisen Sie das Ergebnis von sqrt(z - 1) der Variable my_sqrt zu.
 
 - Class: mult_question
-  Output: Bevor wir uns das Ergebnis ansehen: welchen Inhalt hat die Variable my_sqrt wohl?
+  Output: 'Bevor wir uns das Ergebnis ansehen: welchen Inhalt hat die Variable my_sqrt wohl?'
   CorrectAnswer: ein Vektor der Länge 3
   AnswerChoices: ein Vektor der Länge 3; eine einzelne Zahl (also ein Vektor der Länge 1); ein Vektor der Länge 0 (also ein leerer Vektor)
   AnswerTests: omnitest(correctVal='a vector of length 3')
@@ -175,7 +175,7 @@
   Output: Zum Schluss dieser Lektion haben wir noch einige Tricks zum Zeitsparen für Sie.
 
 - Class: text
-  Output: Vorhin haben Sie zum Beispiel z * 2 + 100 berechnet. Nehmen wir an, Sie hätten einen Fehler gemacht. Eingetlich wollen Sie statt 100 den Wert 1000 addieren. Nun könnten Sie den ganzen Befehl noch einmal eintippen oder ...
+  Output: Vorhin haben Sie zum Beispiel z * 2 + 100 berechnet. Nehmen wir an, Sie hätten einen Fehler gemacht. Eigentlich wollen Sie statt 100 den Wert 1000 addieren. Nun könnten Sie den ganzen Befehl noch einmal eintippen oder ...
 
 - Class: cmd_question
   Output: In den meisten Entwicklungsumgebungen für R (z.B. R-Studio) kann man mit dem Pfeil nach oben die vorherigen Befehle erreichen. Probieren Sie das mal aus: Drücken Sie die Pfeil nach oben Taste, bis Sie den Befehl (z * 2 + 100) sehen. Ändern Sie dann 100 zu 1000 und drücken Sie die Eingabetaste. Sollte das nicht funktionieren, geben Sie den Befehl direkt ein.
@@ -184,7 +184,7 @@
   Hint: Falls in Ihrer Entwicklungsumgebung die Pfeiltaste nicht unterstützt wird, geben Sie den Befehl direkt ein.
 
 - Class: text
-  Output: Und zum Schluss: Stellen Sie sich vor, Sie wollen gerne den Inhalt einer Variablen sehen, die Sie bereits erstellt haben. Leider können Sie sich nicht mehr erinnern, ob die Variable my_div oder myDiv hieß. Nun könnten Sie einfach beide Namen durchprobieren oder ...
+  Output: 'Und zum Schluss: Stellen Sie sich vor, Sie wollen gerne den Inhalt einer Variablen sehen, die Sie bereits erstellt haben. Leider können Sie sich nicht mehr erinnern, ob die Variable my_div oder myDiv hieß. Nun könnten Sie einfach beide Namen durchprobieren oder ...'
 
 - Class: cmd_question
   Output: Sie können auch die ersten beiden Buchstaben der Variablen eingeben und dann die Tabulatortaste drücken (ggf. mehrfach). In den meisten Entwicklungsumgebungen wird Ihnen dann eine Liste aller Variablen, die mit 'my' beginnen angezeigt. Diese Funktion heisst Autovervollständigung und ist äußerst praktisch, wenn Sie sehr viele Variablen in ihrer Arbeitsumgebung erstellt haben. Probieren Sie das mal aus. Sollte die Funktion nicht zur Verfügung stehen, tippen Sie my_div und drücken Sie dann die Eingabetaste.
