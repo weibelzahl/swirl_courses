@@ -187,7 +187,7 @@
   Output: 'Und zum Schluss: Stellen Sie sich vor, Sie wollen gerne den Inhalt einer Variablen sehen, die Sie bereits erstellt haben. Leider können Sie sich nicht mehr erinnern, ob die Variable my_div oder myDiv hieß. Nun könnten Sie einfach beide Namen durchprobieren oder ...'
 
 - Class: cmd_question
-  Output: Sie können auch die ersten beiden Buchstaben der Variablen eingeben und dann die Tabulatortaste drücken (ggf. mehrfach). In den meisten Entwicklungsumgebungen wird Ihnen dann eine Liste aller Variablen, die mit 'my' beginnen angezeigt. Diese Funktion heisst Autovervollständigung und ist äußerst praktisch, wenn Sie sehr viele Variablen in ihrer Arbeitsumgebung erstellt haben. Probieren Sie das mal aus. Sollte die Funktion nicht zur Verfügung stehen, tippen Sie my_div und drücken Sie dann die Eingabetaste.
+  Output: Sie können auch die ersten beiden Buchstaben der Variablen eingeben und dann die Tabulatortaste drücken (ggf. mehrfach). In den meisten Entwicklungsumgebungen wird Ihnen dann eine Liste aller Variablen, die mit 'my' beginnen angezeigt. Diese Funktion heißt Autovervollständigung und ist äußerst praktisch, wenn Sie sehr viele Variablen in ihrer Arbeitsumgebung erstellt haben. Probieren Sie das mal aus. Sollte die Funktion nicht zur Verfügung stehen, tippen Sie my_div und drücken Sie dann die Eingabetaste.
   CorrectAnswer: my_div
   AnswerTests: omnitest(correctExpr='my_div')
   Hint: Sollte diese Funktion nicht zur Verfügung stehen, tippen Sie my_div und drücken Sie dann die Eingabetaste.
