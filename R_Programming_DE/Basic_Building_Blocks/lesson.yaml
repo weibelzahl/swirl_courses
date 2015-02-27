@@ -1,6 +1,6 @@
 - Class: meta
   Course: R Programming
-  Lesson: Grundlagen
+  Lesson: Basic Building Blocks
   Author: Nick Carchedi
   Type: Coursera
   Organization: JHU Biostat; Translation by PFH
@@ -37,8 +37,7 @@
   Output: Stellen Sie sich den Zuweisungsoperator einfach als Pfeil vor. Sie weisen den Wert auf der rechten Seite der Variable auf der linen Seite zu.
 
 - Class: cmd_question
-  Output: Um nun das Ergebnis von 5 + 7 einer neuen Variable namens x zuzuweisen, tippen Sie x <-
-    5 + 7. Sprich: 'x erhält den Wert 5 plus 7'. Probieren Sie das aus.
+  Output: Um nun das Ergebnis von 5 + 7 einer neuen Variable namens x zuzuweisen, tippen Sie x <- 5 + 7. Sprich 'x erhält den Wert 5 plus 7'. Probieren Sie das aus.
   CorrectAnswer: x <- 5 + 7
   AnswerTests: any_of_exprs('x <- 5 + 7', 'x <- 7 + 5')
   Hint: Tippen Sie x <- 5 + 7 ein. Es ist wichtig, dass Sie vor und nach dem Zuweisungsoperator ein Leerzeichen lassen. Zwischen den Zeichen `<` und `-` darf kein Leerzeichen stehen.
