@@ -64,7 +64,7 @@
   Hint: Tippen Sie y und drücken Sie dann die Eingabetaste.
 
 - Class: text
-  Output: 'Als nächstes legen wir uns eine kleine Sammlung von Zahlen an. In R nennt man das einen Vektor (englisch: vector). Alle Objekte die Daten enthalten, nennen wir eine Datenstruktur (englisch: data structure). Die einfachste Datenstruktur in R sind numerische Vektoren. Genau genommen ist sogar eine einzelne Zahl bereits ein Vektor mit der Länge 1'.
+  Output: 'Als nächstes legen wir uns eine kleine Sammlung von Zahlen an. In R nennt man das einen Vektor (englisch: vector). Alle Objekte die Daten enthalten, nennen wir eine Datenstruktur (englisch: data structure). Die einfachste Datenstruktur in R sind numerische Vektoren. Genau genommen ist sogar eine einzelne Zahl bereits ein Vektor mit der Länge 1.'
   
 - Class: cmd_question
   Output: 'Einen Vektor kann man einfach mit der Funktion c() anlegen. Das c steht für das englische ''concatenate'' oder ''combine''. Um nun einen Vektor mit den Zahlen 1.1, 9, and 3.14 anzulegen, tippen Sie c(1.1, 9, 3.14). Achtung: In R werden die Nachkommastellen wie im Englischen üblich mit einem Punkt getrennt und nicht wie im Deutschen mit einem Komma. Stattdessen werden die Argumente mit Kommas voneinander unterschieden. Versuchen Sie nun den Vektor zu erstellen und speichern Sie das Ergebnis in einer neuen Variable mit dem Namen z'.
