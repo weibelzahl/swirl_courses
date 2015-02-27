@@ -67,7 +67,7 @@
   Output: 'Als nächstes legen wir uns eine kleine Sammlung von Zahlen an. In R nennt man das einen Vektor (englisch: vector). Alle Objekte die Daten enthalten, nennen wir eine Datenstruktur (englisch: data structure). Die einfachste Datenstruktur in R sind numerische Vektoren. Genau genommen ist sogar eine einzelne Zahl bereits ein Vektor mit der Länge 1.'
   
 - Class: cmd_question
-  Output: 'Einen Vektor kann man einfach mit der Funktion c() anlegen. Das c steht für das englische ''concatenate'' oder ''combine''. Um nun einen Vektor mit den Zahlen 1.1, 9, and 3.14 anzulegen, tippen Sie c(1.1, 9, 3.14). Achtung: In R werden die Nachkommastellen wie im Englischen üblich mit einem Punkt getrennt und nicht wie im Deutschen mit einem Komma. Stattdessen werden die Argumente mit Kommas voneinander unterschieden. Versuchen Sie nun den Vektor zu erstellen und speichern Sie das Ergebnis in einer neuen Variable mit dem Namen z'.
+  Output: 'Einen Vektor kann man einfach mit der Funktion c() anlegen. Das c steht für das englische ''concatenate'' oder ''combine''. Um nun einen Vektor mit den Zahlen 1.1, 9, and 3.14 anzulegen, tippen Sie c(1.1, 9, 3.14). Achtung: In R werden die Nachkommastellen wie im Englischen üblich mit einem Punkt getrennt und nicht wie im Deutschen mit einem Komma. Stattdessen werden die Argumente mit Kommas voneinander unterschieden. Versuchen Sie nun den Vektor zu erstellen und speichern Sie das Ergebnis in einer neuen Variable mit dem Namen z.'
   CorrectAnswer: z <- c(1.1, 9, 3.14)
   AnswerTests: omnitest(correctExpr='z <- c(1.1, 9, 3.14)')
   Hint: Mit z <- c(1.1, 9, 3.14) weisen Sie den Vektor (1.1, 9, 3.14) der Variable z zu. Die Leerzeichen nach den Kommas sind wiederum nicht unbedingt notwendig, erhöhen aber die Lesbarkeit.
@@ -104,7 +104,7 @@
 
 - Class: text
   Output: 'Es gibt noch mehr arithmetische Operatoren: `+`, `-`, `/` und `^` (wobei x^2
-    für ''x zum Quadrat'' steht). Die Quadtratwurzel wird mit der Funktion sqrt() (das ist die Abkürzung für square-root) berechnet. Der Betrag einer Zahl ergibt sich mit abs()'.
+    für ''x zum Quadrat'' steht). Die Quadtratwurzel wird mit der Funktion sqrt() (das ist die Abkürzung für square-root) berechnet. Der Betrag einer Zahl ergibt sich mit abs().'
 
 - Class: cmd_question
   Output: Berechnen Sie die Wurzel aus z - 1 und weisen Sie das Ergebnis einer neuen Variable mit dem Namen my_sqrt zu.
