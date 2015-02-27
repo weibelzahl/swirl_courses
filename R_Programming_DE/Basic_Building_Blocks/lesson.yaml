@@ -178,7 +178,7 @@
   Output: Vorhin haben Sie zum Beispiel z * 2 + 100 berechnet. Nehmen wir an, Sie hätten einen Fehler gemacht. Eigentlich wollen Sie statt 100 den Wert 1000 addieren. Nun könnten Sie den ganzen Befehl noch einmal eintippen oder ...
 
 - Class: cmd_question
-  Output: In den meisten Entwicklungsumgebungen für R (z.B. R-Studio) kann man mit dem Pfeil nach oben die vorherigen Befehle erreichen. Probieren Sie das mal aus: Drücken Sie die Pfeil nach oben Taste, bis Sie den Befehl (z * 2 + 100) sehen. Ändern Sie dann 100 zu 1000 und drücken Sie die Eingabetaste. Sollte das nicht funktionieren, geben Sie den Befehl direkt ein.
+  Output: 'In den meisten Entwicklungsumgebungen für R (z.B. R-Studio) kann man mit dem Pfeil nach oben die vorherigen Befehle erreichen. Probieren Sie das mal aus: Drücken Sie die Pfeil nach oben Taste, bis Sie den Befehl (z * 2 + 100) sehen. Ändern Sie dann 100 zu 1000 und drücken Sie die Eingabetaste. Sollte das nicht funktionieren, geben Sie den Befehl direkt ein.'
   CorrectAnswer: z * 2 + 1000
   AnswerTests: omnitest(correctExpr='z * 2 + 1000')
   Hint: Falls in Ihrer Entwicklungsumgebung die Pfeiltaste nicht unterstützt wird, geben Sie den Befehl direkt ein.
