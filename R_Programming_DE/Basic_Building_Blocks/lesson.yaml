@@ -1,6 +1,6 @@
 - Class: meta
   Course: R Programming
-  Lesson: Basic Building Blocks
+  Lesson: Grundlagen
   Author: Nick Carchedi
   Type: Coursera
   Organization: JHU Biostat; Translation by PFH
@@ -31,7 +31,7 @@
     wieder 5 + 7 einzutippen, wenn wir das Ergebnis brauchen, können wir einfach eine neue Variable erstellen, die das Ergebnis speichert.
 
 - Class: text
-  Output: 'Um in R einer Variablen einen Wert zuzuweisen, verwendet man den Zuweisungsoperator, also einfach das Zeichen 'keiner als'' und dann ein ''minus''-Zeichen. Das sieht so aus: <-'
+  Output: 'Um in R einer Variablen einen Wert zuzuweisen, verwendet man den Zuweisungsoperator, also einfach das Zeichen ''keiner als'' und dann ein ''minus''-Zeichen. Das sieht so aus: <-'
 
 - Class: text
   Output: Stellen Sie sich den Zuweisungsoperator einfach als Pfeil vor. Sie weisen den Wert auf der rechten Seite der Variable auf der linen Seite zu.
