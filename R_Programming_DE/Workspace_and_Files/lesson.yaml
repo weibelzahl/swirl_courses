@@ -1,69 +1,67 @@
 - Class: meta
   Course: R Programming
-  Lesson: Workspace and Files
+  Lesson: Arbeitsbereich und Dateien
   Author: David Kane
   Type: Coursera
   Organization: Williams College
   Version: 0.1.2
 
 - Class: text
-  Output: In this lesson, you'll learn how to examine your local workspace in R and begin to explore the relationship between your workspace and the file system of your machine.
+  Output: In dieser Übung werden Sie lernen Ihren lokalen Arbeitsbereich in R zu untersuchen. Sie werden das Zusammenspiel von Arbeitsbereich und lokalem Dateisystem explorieren.
 
 - Class: text
-  Output: Because different operating systems have different conventions with regards to things like file paths, the outputs of these commands may vary across machines.
+  Output: Die verschiedenen Betriebssysteme unterscheiden sich in der Art wie sie mit Dateipfaden und ähnlichem umgehen, darum unterscheiden sich unter Umständen auch die Ausgaben eines Befehls, wenn dieser auf unterschiedlichen Rechnern angewendet wird.
 
 - Class: text
-  Output: Let's jump right in so you can get a feel for how these special functions work!
+  Output: Fangen wir doch gleich mal mit einem Beispiel an, so dass Sie ein Gefühl dafür entwickeln können, wie diese Spezialfunktionen funktionieren!
 
 - Class: cmd_question
-  Output: Determine which directory your R session is using as its current working directory using getwd().
+  Output: 'Finden Sie heraus, welches Verzeichnis Ihre aktuelle Sitzung in R verwendet. Das Arbeitsverzeichnis (englisch: working directory) erhalten Sie mit dem Befehl getwd().'
   CorrectAnswer: getwd()
   AnswerTests: omnitest(correctExpr='getwd()')
-  Hint: Type getwd() to determine the current working directory.
+  Hint: Tippen Sie 'getwd()', um das aktuelle Arbeitsverzeichnis zu erhalten.
 
 - Class: cmd_question
-  Output: List all the objects in your local workspace using ls().
+  Output: Die vorhandenen Objekt in Ihrem Arbeitsbereich erhalten Sie mit dem Befehl ls().
   CorrectAnswer: ls()
   AnswerTests: omnitest(correctExpr='ls()')
-  Hint: Type ls() to view all the objects in your local workspace.
+  Hint: Tippen Sie 'ls()', um alle Objekte in Ihrem lokalen Arbeitsbereich zu sehen.
 
 - Class: text
-  Output: Some R commands are the same as the Unix equivalents. This is another reason why learning Unix is a good idea.
+  Output: Einige Befehle in R sind die gleichen, die auch in Unix verwendet werden. Noch ein Grund sich mal genauer mit Unix zu beschäftigen.
 
 - Class: text
-  Output: In the first two  questions above, we told you the exact command to use. But isn't that too easy? Going forward we won't do that. 
+  Output: In den beiden bisherigen Fragen haben wir Ihnen immer genau vorgegeben, wie der einzutippende Befehl lautet, aber das ist eigentlich ein wenig zu einfach. Das sollten wir ändern. 
 
 - Class: text
-  Output: Instead, we will word the questions in such a way that a web search should lead you to the appropriate R command. In this case, searching for "R list objects workspace" should work well.)
-
+  Output: Stattdessen werden wir die Fragen meist so stellen, dass man den entsprechenden Befehl auch mit einer Suche im Web finden kann. Bei der letzten Frage hätte eine Suche nach "R Liste Objekte Arbeitsbereich" funktioniert.
 
 - Class: cmd_question
-  Output: Assign 9 to x using x <- 9.
+  Output: 'Weisen Sie der Variable x den Wert 9 zu. Der Befehl lautet: x <- 9 (das sollten Sie bereits wissen).'
   CorrectAnswer: x <- 9
   AnswerTests: omnitest(correctExpr='x <- 9')
-  Hint: Type x <- 9 to assign 9 to x.
+  Hint: Tippen Sie 'x <- 9', um x den Wert 9 zuzuweisen.
 
 - Class: text
-  Output: Having created x, you should now see x when you try ls() again. You can do this by suspending this swirl lesson with play() at the command prompt. Once you have run the ls() command to confirm that x exists in the workspace, you can re-start the lesson from the same location with nxt(). Try it (after hitting return to get to a command prompt)!
+  Output: Da Sie nun das Objekt x erstellt haben, sollten Sie x aufgelistet bekommen, wenn Sie den Befehl ls() verwenden. Um dies zu tun müssen Sie zunächst diese swirl-Übung unterbrechen. Das geht mit dem Befehl play(). Wenn Sie den ls()-Befehl ausprobiert haben, kommen Sie mit nxt() wieder hierher zurück. Probieren Sie das mal aus (zunächst müssen Sie die Eingabetaste drücken, um auf die Kommandozeile zu kommen)!
 
 - Class: cmd_question
-  Output: List all the files in your working directory.
+  Output: Erstellen Sie nun eine Liste aller Dateien in Ihrem Arbeitsverzeichnis. Welcher Befehl ist dafür geeignet?
   CorrectAnswer: list.files()
   AnswerTests: any_of_exprs('list.files()', 'dir()')
-  Hint: Type list.files() to all the files in your working directory.
+  Hint: Tippen Sie 'list.files()', um eine Liste aller Dateien in Ihrem Arbeitsverzeichnis zu erhalten.
 
 - Class: text
-  Output: As we go through this lesson, you should be examining the help page for each new function. 
+  Output: Während wir diese Befehle durchgehen, lohnt es sich jeweils auch die entsprechenden Hilfeseiten anzusehen.
 
 - Class: cmd_question
-  Output: Pull up the help for list.files().
+  Output: Öffnen Sie die Hilfeseite für list.files().
   CorrectAnswer: ?list.files
   AnswerTests: any_of_exprs('?list.files', 'help("list.files")')
-  Hint: Type ?list.files to retrieve the help file for list.files.
-
+  Hint: Tippen Sie '?list.files', um die Hilfeseite des Befehls list.files zu öffnen.
 
 - Class: text
-  Output: One of the most helpful parts of any R help file is the See Also section. Read that section for list.files. Some of these functions may be used in later portions of this lesson.
+  Output: Zu den besonders hilfreichen Teilen einer jeden Hilfeseite in R gehört der Abschnitt "See Also". Lesen Sie diesen Abschnitt auf der Hilfeseite für list.files(). Einige dieser Funktionen könnten in dieser Übung nochmal wichtig werden.
 
 #- Class: cmd_question
 #  Output: List all the files in your working directory recursively --- that is, including the files in any subdirectories. 
@@ -72,39 +70,37 @@
 #  Hint: Type list.files(recursive = TRUE) to list all the files in your working directory recursively.
 
 - Class: text
-  Output: Using the args() function on a function name is also a handy way to see what arguments a function can take. 
-
+  Output: Wen man die Funktion args() auf den Namen einer anderen Funktion anwendet, erhält man eine Liste der Argumente, die man bei dieser Funktion anwenden kann.
 
 - Class: cmd_question
-  Output: Use the args() function to determine the arguments to list.files().
+  Output: Verwenden Sie die Funktion arg(), um herauszufinden, welche Argumente bei der Funktion list.files() angewendet werden können.
   CorrectAnswer: args(list.files)
   AnswerTests: omnitest(correctExpr='args(list.files)')
-  Hint: Type args(list.files) to see the arguments to list.files.
-
+  Hint: Tippen Sie 'args(list.files)', um eine Liste der anwendbaren Argumente zu erhalten.
 
 - Class: cmd_question
-  Output: Assign the value of the current working directory to a variable called "old.dir".
+  Output: Weisen Sie nun den Wert des aktuellen Arbeitsverzeichnisses einer Variable mit dem Namen "old.dir" zu.
   CorrectAnswer: old.dir <- getwd()
   AnswerTests: omnitest(correctExpr='old.dir <- getwd()')
-  Hint: Type old.dir <- getwd() to sAssign the value of the current working directory to a variable called "old.dir".
+  Hint: Tippen Sie 'old.dir <- getwd()', um den Wert des aktuellen Arbeitsverzeichnisses der Variable "old.dir" zuzuweisen.
 
 - Class: text
-  Output: We will use old.dir at the end of this lesson to move back to the place that we started. A lot of query functions like getwd() have the useful property that they return the answer to the question as a result of the function.
+  Output: Wir werden old.dir am Ende dieser Übung verwenden, um den Anfangszustand wieder herzustellen. Viele Funktionen wie getwd() haben die nützliche Eigenschaft, dass sie die Antwort als Ergebnis ausgeben.
 
 - Class: cmd_question
-  Output: Create a directory in the current working directory called "testdir".
+  Output: Erstellen Sie ein neues Verzeichnis innerhalb des aktuellen Arbeitsverzeichnisses mit dem Namen "testdir".
   CorrectAnswer: dir.create("testdir")
   AnswerTests: omnitest(correctExpr='dir.create("testdir")')
-  Hint: Type dir.create("testdir") to create a directory in the current working directory called "testdir".
+  Hint: Tippen Sie 'dir.create("testdir")', um im aktuellen Arbeitsverzeichnis ein neues Verzeichnis mit dem Namen "testdir" zu erstellen.
 
 - Class: text
-  Output: We will do all our work in this new directory and then delete it after we are done. This is the R analog to "Take only pictures, leave only footprints."
+  Output: Alles weitere werden wir in diesem neuen Verzeichnis machen und dieses am Ende dann wieder löschen. Frei nach dem Motto "Take only pictures, leave only footprints."
 
 - Class: cmd_question
-  Output: Set your working directory to "testdir".
+  Output: Machen Sie nun "testdir" zu Ihrem Arbeitsverzeichnis.
   CorrectAnswer: setwd("testdir")
   AnswerTests: any_of_exprs('setwd("testdir")', 'setwd("testdir/")')
-  Hint: Use setwd("testdir") to set your working directory to "testdir".
+  Hint: Verwenden Sie den Befehl 'setwd("testdir")', um das Arbeitsverzeichnis auf "testdir" zu ändern.
 
 - Class: text
   Output: In general, you will want your working directory to be someplace sensible, perhaps created for the specific project that you are working on. In fact, organizing your work in R packages using R Studio is an excellent option. But those topics are beyond the scope of this lesson.
